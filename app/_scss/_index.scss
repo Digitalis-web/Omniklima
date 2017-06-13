@@ -5,9 +5,20 @@
   width: 100vw;
   background: #000;
   .video_container{
+    width: 100%;
+    height: 100%;
 
     .video_player{
-
+      width: 100%;
+      height: 100%;
+    }
+    .video_text_container{
+      h1{
+        color: white;
+      }
+      p{
+        color: white;
+      }
     }
   }
 }
@@ -15,7 +26,7 @@
 .info{
   height: 100vh;
   width: 100vw;
-  background: #000;
+  background: pink;
 
   .info_container{
 
