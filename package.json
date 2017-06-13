@@ -1,12 +1,12 @@
 {
-  "name": "mall",
+  "name": "omniklima",
   "version": "1.0.0",
-  "description": "mall för digitalis hemsidor",
+  "description": "Omniklima Websitw",
   "main": "index.php",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "digitalis",
+  "author": "Digital penguin solutions",
   "license": "ISC",
   "devDependencies": {
     "barba.js": "^1.0.0",
@@ -23,6 +23,7 @@
     "gulp-header": "^1.8.7",
     "gulp-htmlmin": "^3.0.0",
     "gulp-imagemin": "^3.1.1",
+    "gulp-install": "^1.1.0",
     "gulp-plumber": "^1.1.0",
     "gulp-remove-html-comments": "^1.0.1",
     "gulp-rename": "^1.2.2",

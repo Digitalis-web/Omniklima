@@ -39,15 +39,23 @@ g.task('minify', ['removeComm'] , function(){
 
 //convert scss to css and add prefixes
 g.task('compile-sass', function () {
-    return g.src('app/scss/app.scss')
+    return g.src('app/_scss/app.scss')
         .pipe(plumber())
         .pipe(sass())
-        .pipe(prefix('last 2 versions'))
         .pipe(g.dest('app/css'));
 });
 
+g.task('prefix', ['compile-sass'], function () {
+    return g.src('app/css/app.css')
+        .pipe(prefix({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
+        .pipe(g.dest('app/css/'));
+});
+
 //minify css files and run the sass function before
-g.task('css-build', ['compile-sass'], function() {
+g.task('css-build', ['prefix'], function() {
     return g.src('app/css/*.css')
         .pipe(plumber())
         .pipe(cleanCss({compatibility: 'ie8'}))
@@ -55,18 +63,20 @@ g.task('css-build', ['compile-sass'], function() {
 });
 
 //creating app.js from all js files in the app folder
-g.task('concat-js-app',function () {
-    return g.src('app/js/app/*.js)')
+g.task('concat-js-app' ,function () {
+    return g.src('app/js/app/*.js')
         .pipe(plumber())
         .pipe(concat('app.js'))
+        .pipe(uglify())
         .pipe(g.dest('app/js'))
 });
 
-//create impots.js from all js files in imporst folder
+//create imports.js from all js files in import folder
 g.task('concat-js-third-party' ,function () {
     return g.src('app/js/third_party/*.js')
         .pipe(plumber())
         .pipe(concat('third_party.js'))
+        .pipe(uglify())
         .pipe(g.dest('app/js'))
 });
 
@@ -78,9 +88,9 @@ g.task('js-build', ['concat-js-app','concat-js-third-party'] , function () {
         .pipe(g.dest('dist/js'))
 });
 
-//copy img and .htaccess files to dist folder
+//copy .htaccess files to dist folder
 g.task('copy', function() {
-    return g.src(['app/.htaccess', 'app/config.ini'])
+    return g.src(['app/.htaccess', 'app/robots.txt'])
         .pipe(plumber())
         .pipe(g.dest('dist'));
 });
@@ -93,9 +103,16 @@ g.task('imgmin', function () {
         .pipe(g.dest('dist/img'));
 });
 
+// watch for file changes and performs the different tasks
+g.task('dev-watch', function () {
+    g.watch('app/js/**/*.js',         ['concat-js-app','concat-js-third-party']);
+    g.watch('app/_scss/**/*',         ['prefix']);
+});
+
+//connect to a php server and live update when changes are made
 g.task('connect-php', function () {
     connect.server({
-        port: 8079,
+        port: 8078,
         base: 'app',
         open: false
     });
@@ -105,14 +122,14 @@ g.task('connect-php', function () {
 
     browserSync({
         notify: false,
-        port  : 8079,
+        port  : 8078,
         server: {
             baseDir   : ['app'],
             middleware: function (req, res, next) {
                 var url = req.url;
 
                 if (!url.match(/^\/(css)\//)) {
-                    proxy.web(req, res, { target: 'http://localhost:8079' });
+                    proxy.web(req, res, { target: 'http://localhost:8078' });
                 } else {
                     next();
                 }
@@ -124,16 +141,22 @@ g.task('connect-php', function () {
         'app/**/*.html',
         'app/**/*.php',
         'app/js/*.js',
+        'app/img/**/*',
         'app/css/app.css'
     ]).on('change', reload);
 
-    g.watch('app/scss/**/*scss',     ['compile-sass']);
-    g.watch('app/js/**/*.js',        ['concat-js-app','concat-js-third-party']);
+    g.watch('app/_scss/**/*scss',       ['compile-sass']);
+    g.watch('app/js/app/*.js',         ['concat-js-app']);
+    g.watch('app/js/third_party/*.js', ['concat-js-third-party']);
 });
 
+//clean old dist and compile all files
 g.task('build',['clean'],function () {
     g.start('minify', 'css-build', 'js-build', 'copy', 'imgmin')
 });
 
+//developing with xampp
+g.task('dev',       ['prefix', 'concat-js-third-party', 'concat-js-app', 'dev-watch']);
+
 //run css tole to compile css
-g.task('default', ['compile-sass', 'concat-js-app','concat-js-third-party', 'connect-php']);
+g.task('default',   ['prefix', 'concat-js-third-party', 'concat-js-app' ,'connect-php']);

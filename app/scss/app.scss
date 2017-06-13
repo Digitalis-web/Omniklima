@@ -9,9 +9,8 @@
 @import "variabels";
 @import "everything";
 
-//include pages
-@import "footer";
-@import "nav";
-
 //import scroll
 @import "skroll";
+
+@import "index";
+@import "error";
