@@ -4,6 +4,7 @@
 <head>
     <title>Omniklima</title>
     <meta name="keywords" content=""/>
+    <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body class="wrapper col-xs-12" id="page-top" class="index">
@@ -12,10 +13,12 @@
 <header class="container-fluid video">
     <div class="video row-fluid">
         <div class="video_container col-xs-12">
+
             <div id="organvideo" class="video_player"></div>
+
             <div class="video_text_container col-xs-12">
-                <h1>Stach</h1>
-                <h2>Mycket bra stach</h2>
+                <h1>RCA road condition ahead </h1>
+                <h2>Technique deliverd by Omniklima</h2>
             </div>
         </div>
     </div>

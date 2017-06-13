@@ -1,1 +1,1 @@
-$(document).ready(on_ready);
+function onYouTubeIframeAPIReady(){$(document).ready(on_ready_video)}function on_ready_video(){if(isDesktop()){var o;o=new YT.Player("organvideo",{videoId:"ECnlyAGcLPs",playerVars:{autoplay:1,controls:0,showinfo:0,modestbranding:1,loop:1,fs:0,cc_load_policy:0,iv_load_policy:3,autohide:1},events:{onReady:function(o){o.target.mute()},onStateChange:function(e){e.data===YT.PlayerState.ENDED&&o.playVideo()}}})}}
