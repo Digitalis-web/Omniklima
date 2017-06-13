@@ -2,8 +2,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Omniklima</title>
+    <meta name="keywords" content=""/>
 </head>
 
 <body class="wrapper col-xs-12" id="page-top" class="index">

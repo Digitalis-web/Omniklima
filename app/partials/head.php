@@ -1,9 +1,9 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
     <meta name="description" content="Digitalis"/>
-    <meta name="keywords" content="webdesing, creative design"/>
     <meta name="author" content="Digital Internet Solutions">
 
     <!--css-->
@@ -11,9 +11,6 @@
 
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900i" rel="stylesheet">
-
-    <!--fontawesome-->
-    <script src="https://use.fontawesome.com/28b7055de1.js"></script>
 
     <!--JQuery-->
     <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
@@ -24,7 +21,6 @@
     <!--js files-->
     <script src="js/app.js"></script>
     <script src="js/third_party.js"></script>
-    <script src="js/admin.js"></script>
 
     <!-- Latest compiled and minified JavaScript for bootstrap-->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
