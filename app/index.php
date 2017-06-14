@@ -11,8 +11,8 @@
 
 <!-- Video -->
 <header class="container-fluid video">
-    <div class="video row-fluid">
-        <div class="video_container col-xs-12">
+    <div class="row-fluid video">
+        <div class="col-xs-12 video_container">
 
             <div id="organvideo" class="video_player"></div>
 
