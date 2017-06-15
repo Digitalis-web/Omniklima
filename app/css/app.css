@@ -1,5 +1,5 @@
 @import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900i);
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400,700,900");
 .wrapper, html, body {
   background: #ffffff;
   z-index: 1;
@@ -89,6 +89,7 @@ section {
       height: 100vh;
       z-index: 50; }
     .video .video_container .video_text_container {
+      background: rgba(51, 51, 51, 0.2);
       position: absolute;
       height: 100vh;
       width: 100vw;
@@ -103,13 +104,45 @@ section {
       .video .video_container .video_text_container h2 {
         font-size: 2vw;
         color: white; }
+      .video .video_container .video_text_container button {
+        margin-top: 5vh;
+        background: rgba(51, 51, 51, 0.4);
+        border: 1px solid white;
+        color: white;
+        font-size: 1.2vw;
+        padding: 0.5vw; }
 
 .info {
-  height: 100vh;
-  width: 100vw;
-  background: pink; }
+  background: #333333; }
   .info .info_container .info_text_container {
-    text-align: center; }
+    margin-bottom: 10vh;
+    margin-top: 10vh;
+    text-align: center;
+    color: white; }
+    .info .info_container .info_text_container h1 {
+      font-weight: 800;
+      font-size: 5vw;
+      margin-bottom: 4vh; }
+    .info .info_container .info_text_container p {
+      font-weight: 400;
+      font-size: 2vw; }
+
+.contact .contact_container .contact_text_container {
+  margin-bottom: 10vh;
+  margin-top: 10vh;
+  text-align: center; }
+  .contact .contact_container .contact_text_container h1 {
+    margin-bottom: 4vh;
+    font-weight: 800;
+    font-size: 5.5vw;
+    margin-top: 10vh;
+    text-transform: uppercase; }
+  .contact .contact_container .contact_text_container h2 {
+    font-weight: 400;
+    font-size: 2vw; }
+  .contact .contact_container .contact_text_container p {
+    font-weight: 300;
+    font-size: 2vw; }
 
 .wrapper, html, body {
   background: #ffffff;

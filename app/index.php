@@ -14,31 +14,41 @@
     <div class="row-fluid video">
         <div class="col-xs-12 video_container">
 
-            <div id="organvideo" class="video_player"></div>
+            <div id="ytvideo" class="video_player"></div>
 
             <div class="video_text_container col-xs-12">
                 <h1>RCA road condition ahead </h1>
-                <h2>Technique deliverd by Omniklima</h2>
+                <h2>Technique delivered by OmniKlima</h2>
+                <button>play video in fullscreen</button>
             </div>
         </div>
     </div>
 </header>
 
 <!-- Text and info -->
-<section class="info container">
-    <row class="info">
-        <col-xs-12 class="info_container">
+<section class="info container-fluid ">
+    <div class="row-fluid info">
+        <div class="col-xs-12 info_container">
             <div class="info_text_container col-xs-6 col-xs-offset-3">
-                <h1>Stach pojkar</h1>
-                <p>mcyket fina stachpojkar</p>
+                <h1>Solutions for road condition</h1>
+                <p>Driving conditions ahead of a driving vehicle.</p>
+                <p>A Technique delivered by OmniKlima.</p>
             </div>
-            <div class="info_contact_container col-xs-6 col-xs-offset-3">
+        </div>
+    </div>
+</section>
+
+<section class="contact container-fluid">
+    <div class="row-fluid contact">
+        <col-xs-12 class="contact_container">
+            <div class="col-xs-6 col-xs-offset-3 contact_text_container">
+                <h1>contact</h1>
                 <h2>Torbjörn gustavsson</h2>
                 <p>torbjorn.gustavsson@klimator.se</p>
                 <p>+46 (0)709 170 252</p>
             </div>
         </col-xs-12>
-    </row>
+    </div>
 </section>
 
 </body>

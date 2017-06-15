@@ -4,7 +4,7 @@ function onYouTubeIframeAPIReady() {
 
 function on_ready_video(){
     var player;
-    player = new YT.Player('organvideo', {
+    player = new YT.Player('ytvideo', {
         videoId: 'ECnlyAGcLPs', // YouTube Video ID
         playerVars: {
             autoplay: 1,        // Auto-play the video on load
@@ -30,3 +30,4 @@ function on_ready_video(){
 
     });
 }
+
