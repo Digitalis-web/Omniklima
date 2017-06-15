@@ -32,7 +32,7 @@
             <div class="info_text_container col-xs-6 col-xs-offset-3">
                 <h1>Solutions for road condition</h1>
                 <p>Driving conditions ahead of a driving vehicle.</p>
-                <p>A Technique delivered by OmniKlima.</p>
+                <p>A technique delivered by OmniKlima.</p>
             </div>
         </div>
     </div>
