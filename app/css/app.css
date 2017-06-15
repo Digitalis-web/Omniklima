@@ -84,6 +84,10 @@ section {
   .video .video_container {
     width: 100vw;
     height: 100vh; }
+    .video .video_container #myvideo:-webkit-full-screen {
+      width: 100%;
+      height: 100%;
+      z-index: 10000; }
     .video .video_container .video_player {
       width: 100vw;
       height: 100vh;
@@ -119,12 +123,16 @@ section {
           transition: 0.5s; }
 
 .info {
-  background: #333333; }
+  background: #ebebeb; }
+  .info .info_container .info_img_container {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    margin-left: 2.5vw; }
   .info .info_container .info_text_container {
     margin-bottom: 10vh;
     margin-top: 10vh;
     text-align: center;
-    color: white; }
+    color: #333333; }
     .info .info_container .info_text_container h1 {
       font-weight: 800;
       font-size: 5vw;
@@ -133,22 +141,25 @@ section {
       font-weight: 400;
       font-size: 2vw; }
 
-.contact .contact_container .contact_text_container {
-  margin-bottom: 10vh;
-  margin-top: 10vh;
-  text-align: center; }
-  .contact .contact_container .contact_text_container h1 {
-    margin-bottom: 4vh;
-    font-weight: 800;
-    font-size: 5.5vw;
+.contact .contact_container {
+  background: #333333; }
+  .contact .contact_container .contact_text_container {
+    margin-bottom: 10vh;
     margin-top: 10vh;
-    text-transform: uppercase; }
-  .contact .contact_container .contact_text_container h2 {
-    font-weight: 400;
-    font-size: 2vw; }
-  .contact .contact_container .contact_text_container p {
-    font-weight: 300;
-    font-size: 2vw; }
+    text-align: center;
+    color: white; }
+    .contact .contact_container .contact_text_container h1 {
+      margin-bottom: 4vh;
+      font-weight: 800;
+      font-size: 5.5vw;
+      margin-top: 10vh;
+      text-transform: uppercase; }
+    .contact .contact_container .contact_text_container h2 {
+      font-weight: 400;
+      font-size: 2vw; }
+    .contact .contact_container .contact_text_container p {
+      font-weight: 300;
+      font-size: 2vw; }
 
 .wrapper, html, body {
   background: #ffffff;

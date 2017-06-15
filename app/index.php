@@ -14,12 +14,12 @@
     <div class="row-fluid video">
         <div class="col-xs-12 video_container">
 
-            <div id="ytvideo" class="video_player"></div>
+            <div id="video" class="video_player"></div>
 
             <div class="video_text_container col-xs-12">
                 <h1>RCA road condition ahead </h1>
                 <h2>Technique delivered by OmniKlima</h2>
-                <button id="fullscreen">play video in fullscreen</button>
+                <button>play video in fullscreen</button>
             </div>
         </div>
     </div>
@@ -29,7 +29,10 @@
 <section class="info container-fluid ">
     <div class="row-fluid info">
         <div class="col-xs-12 info_container">
-            <div class="info_text_container col-xs-6 col-xs-offset-3">
+            <div class="info_img_container col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1">
+                <img src="img/logo/Logo.svg" alt="Omniklima logo">
+            </div>
+            <div class="info_text_container col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
                 <h1>Solutions for road condition</h1>
                 <p>Driving conditions ahead of a driving vehicle.</p>
                 <p>A technique delivered by OmniKlima.</p>
