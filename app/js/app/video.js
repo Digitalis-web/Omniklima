@@ -1,6 +1,8 @@
 function onYouTubeIframeAPIReady() {
     $(document).ready(on_ready_video);
 }
+var player, iframe;
+var $ = document.querySelector.bind(document);
 
 function on_ready_video(){
     var player;
@@ -31,3 +33,22 @@ function on_ready_video(){
     });
 }
 
+// when ready, wait for clicks
+function onPlayerReady(event) {
+    var player = event.target;
+    iframe = $('#ytvideo');
+    setupListener();
+}
+
+function setupListener (){
+    $('button').addEventListener('click', playFullscreen);
+}
+
+function playFullscreen (){
+    player.playVideo();//won't work on mobile
+
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+    if (requestFullScreen) {
+        requestFullScreen.bind(iframe)();
+    }
+}

@@ -7,7 +7,7 @@
     <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 
-<body class="wrapper col-xs-12" id="page-top" class="index">
+<body class="wrapper col-xs-12 index" id="page-top">
 
 <!-- Video -->
 <header class="container-fluid video">
@@ -19,7 +19,7 @@
             <div class="video_text_container col-xs-12">
                 <h1>RCA road condition ahead </h1>
                 <h2>Technique delivered by OmniKlima</h2>
-                <button>play video in fullscreen</button>
+                <button id="fullscreen">play video in fullscreen</button>
             </div>
         </div>
     </div>
@@ -40,16 +40,20 @@
 
 <section class="contact container-fluid">
     <div class="row-fluid contact">
-        <col-xs-12 class="contact_container">
+        <div class="contact_container col-xs-12">
             <div class="col-xs-6 col-xs-offset-3 contact_text_container">
                 <h1>contact</h1>
                 <h2>Torbjörn gustavsson</h2>
                 <p>torbjorn.gustavsson@klimator.se</p>
                 <p>+46 (0)709 170 252</p>
             </div>
-        </col-xs-12>
+        </div>
     </div>
 </section>
+
+<!--js files-->
+<script src="js/app.js"></script>
+<script src="js/third_party.js"></script>
 
 </body>
 </html>

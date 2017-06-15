@@ -40,12 +40,20 @@
       }
 
       button{
+        outline: none;
+        text-transform: uppercase;
         margin-top:5vh;
         background: rgba($color2, 0.4);
         border: 1px solid white;
         color: white;
-        font-size: 1.2vw;
+        font-size: 1vw;
         padding:0.5vw;
+
+        &:hover{
+          background: $color2;
+          border: 0;
+          transition: 0.5s;
+        }
       }
     }
   }
