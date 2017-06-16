@@ -7,9 +7,9 @@
     <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 
-<body class="wrapper col-xs-12 index" id="page-top">
+<body class="wrapper col-xs-12">
 
-<!-- Video -->
+<!-- Video and intro -->
 <header class="container-fluid video">
     <div class="row-fluid video">
         <div class="col-xs-12 video_container">
@@ -25,7 +25,7 @@
     </div>
 </header>
 
-<!-- Text and info -->
+<!-- Logo and info-->
 <section class="info container-fluid ">
     <div class="row-fluid info">
         <div class="col-xs-12 info_container">
@@ -41,6 +41,7 @@
     </div>
 </section>
 
+<!-- Contact information -->
 <section class="contact container-fluid">
     <div class="row-fluid contact">
         <div class="contact_container col-xs-12">
