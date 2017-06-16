@@ -5,7 +5,6 @@ function onYouTubeIframeAPIReady() {
 var player, iframe;
 var $ = document.querySelector.bind(document);
 
-
 function on_ready_video(){
     player = new YT.Player('video', {
         videoId: 'ECnlyAGcLPs', // YouTube Video ID
@@ -24,8 +23,7 @@ function on_ready_video(){
         },
         events: {
             onReady: function(e) {
-                e.target.mute();
-                e.onPlayerReady();
+                onPlayerReady;
             },
             onStateChange: function(e){
                 if (e.data === YT.PlayerState.ENDED) {
@@ -37,10 +35,9 @@ function on_ready_video(){
     });
 }
 
-// when ready, wait for clicks
 function onPlayerReady(event) {
     var player = event.target;
-    iframe = $('#player');
+    iframe = $('#video');
     setupListener();
 }
 
@@ -49,7 +46,7 @@ function setupListener (){
 }
 
 function playFullscreen (){
-    player.playVideo();//won't work on mobile
+    player.playVideo();
 
     var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
     if (requestFullScreen) {
