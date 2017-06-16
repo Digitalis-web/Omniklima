@@ -1,9 +1,12 @@
 function onYouTubeIframeAPIReady() {
     $(document).ready(on_ready_video);
-
 }
+
+var player, iframe;
+var $ = document.querySelector.bind(document);
+
+
 function on_ready_video(){
-    var player;
     player = new YT.Player('video', {
         videoId: 'ECnlyAGcLPs', // YouTube Video ID
         //playlist:'z8kBoDdQOgc',
@@ -22,6 +25,7 @@ function on_ready_video(){
         events: {
             onReady: function(e) {
                 e.target.mute();
+                e.onPlayerReady();
             },
             onStateChange: function(e){
                 if (e.data === YT.PlayerState.ENDED) {
@@ -31,4 +35,24 @@ function on_ready_video(){
         }
 
     });
+}
+
+// when ready, wait for clicks
+function onPlayerReady(event) {
+    var player = event.target;
+    iframe = $('#player');
+    setupListener();
+}
+
+function setupListener (){
+    $('button').addEventListener('click', playFullscreen);
+}
+
+function playFullscreen (){
+    player.playVideo();//won't work on mobile
+
+    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
+    if (requestFullScreen) {
+        requestFullScreen.bind(iframe)();
+    }
 }
