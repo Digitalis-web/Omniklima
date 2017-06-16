@@ -44,7 +44,7 @@
 <section class="contact container-fluid">
     <div class="row-fluid contact">
         <div class="contact_container col-xs-12">
-            <div class="col-xs-6 col-xs-offset-3 contact_text_container fade-in">
+            <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 contact_text_container fade-in">
                 <h1>contact</h1>
                 <h2>Torbjörn gustavsson</h2>
                 <p>torbjorn.gustavsson@klimator.se</p>
