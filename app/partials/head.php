@@ -9,7 +9,7 @@
     <link href="css/app.css" rel="stylesheet">
 
     <!--JQuery-->
-    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+ <!--   <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>-->
     <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" type="text/javascript"></script>
     <!--Velocity -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.4.3/velocity.min.js" type="text/javascript"></script>
@@ -20,6 +20,7 @@
             crossorigin="anonymous"></script>
     <!--icon-->
     <link rel="icon" href="img/logo/favicon.png">
+    <script src = "js/app.js" type="text/javascript"></script>
 
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"

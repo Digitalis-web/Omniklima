@@ -3,7 +3,7 @@ function onYouTubeIframeAPIReady() {
 }
 
 var player, iframe;
-var $ = document.querySelector.bind(document);
+//var $ = document.querySelector.bind(document);
 
 function on_ready_video(){
     player = new YT.Player('video', {
@@ -23,7 +23,7 @@ function on_ready_video(){
         },
         events: {
             onReady: function(e) {
-                onPlayerReady;
+                onPlayerReady(e);
             },
             onStateChange: function(e){
                 if (e.data === YT.PlayerState.ENDED) {
@@ -42,14 +42,30 @@ function onPlayerReady(event) {
 }
 
 function setupListener (){
-    $('button').addEventListener('click', playFullscreen);
+    $('button').on('click', fullscreen);
 }
 
-function playFullscreen (){
-    player.playVideo();
-
-    var requestFullScreen = iframe.requestFullScreen || iframe.mozRequestFullScreen || iframe.webkitRequestFullScreen;
-    if (requestFullScreen) {
-        requestFullScreen.bind(iframe)();
+function fullscreen() {
+    var e = document.getElementById("video");
+    if (e.requestFullscreen) {
+        e.requestFullscreen();
+    } else if (e.webkitRequestFullscreen) {
+        e.webkitRequestFullscreen();
+    } else if (e.mozRequestFullScreen) {
+        e.mozRequestFullScreen();
+    } else if (e.msRequestFullscreen) {
+        e.msRequestFullscreen();
     }
 }
+//function playFullscreen (){
+    //player.playVideo();
+    //console.log("fullscreen");
+
+    //var requestFullscreen = iframe.requestFullscreen || iframe.mozRequestFullscreen || iframe.webkitRequestFullscreen || iframe.msRequestFullscreen;
+    //console.log(requestFullscreen);
+
+    //if (requestFullScreen) {
+        ////requestFullScreen.bind(iframe)();
+        //iframe.requestFullscreen();
+    //}
+//}
