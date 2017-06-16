@@ -3,8 +3,8 @@
 <html lang="en">
 <head>
     <title>Omniklima</title>
-    <meta name="keywords" content=""/>
-    <script async src="https://www.youtube.com/iframe_api"></script>
+    <meta name="keywords" content="Road condition, OmniKlima, climate"/>
+    <meta name="description" content="Driving conditions ahead of a driving vehicle."/>
 </head>
 
 <body class="wrapper col-xs-12">
@@ -58,6 +58,7 @@
 <!--js files-->
 <script src="js/app.js"></script>
 <script src="js/third_party.js"></script>
+<script async src="https://www.youtube.com/iframe_api"></script>
 
 </body>
 </html>
