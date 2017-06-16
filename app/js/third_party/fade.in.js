@@ -60,11 +60,11 @@ $(document).ready(function() {
 		//$(this).animate( { top: '20px'}, 0);
 	//});
 	
-	$.force_appear();
-	setTimeout(function()
-	{
-		$.force_appear();
-	}, 100);
+	//$.force_appear();
+	//setTimeout(function()
+	//{
+		//$.force_appear();
+	//}, 100);
 	
 }
 

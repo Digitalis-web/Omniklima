@@ -1,10 +1,14 @@
-<?php include "partials/head.php" ?>
 <!DOCTYPE html>
+<?php include "partials/head.php" ?>
 <html lang="en">
 <head>
-    <title>Omniklima</title>
+    <title>OmniKlima</title>
     <meta name="keywords" content="Road condition, OmniKlima, climate"/>
     <meta name="description" content="Driving conditions ahead of a driving vehicle."/>
+    <!--js files-->
+    <script src="js/app.js"></script>
+    <script src="js/third_party.js"></script>
+    <script async src="https://www.youtube.com/iframe_api"></script>
 </head>
 
 <body class="wrapper col-xs-12">
@@ -33,9 +37,9 @@
                 <img class="slide-in-left slide-in" src="img/logo/Logo.svg" alt="Omniklima logo">
             </div>
             <div class="info_text_container col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
-                <h1 class="fade-delay-1 fade-in">Solutions for road condition</h1>
-                <p class="fade-delay-2 fade-in">Driving conditions ahead of a driving vehicle.</p>
-                <p class="fade-delay-2 fade-in">A technique delivered by OmniKlima.</p>
+                <h1 class="fade-in">Solutions for road condition</h1>
+                <p class="fade-in">Driving conditions ahead of a driving vehicle.</p>
+                <p class="fade-in">A technique delivered by OmniKlima.</p>
             </div>
         </div>
     </div>
@@ -47,7 +51,7 @@
         <div class="contact_container col-xs-12">
             <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 contact_text_container fade-in">
                 <h1>contact</h1>
-                <h2>Torbjörn gustavsson</h2>
+                <h2>Torbjörn Gustavsson</h2>
                 <p>torbjorn.gustavsson@klimator.se</p>
                 <p>+46 (0)709 170 252</p>
             </div>
@@ -55,10 +59,8 @@
     </div>
 </section>
 
-<!--js files-->
-<script src="js/app.js"></script>
-<script src="js/third_party.js"></script>
-<script async src="https://www.youtube.com/iframe_api"></script>
+
+
 
 </body>
 </html>
