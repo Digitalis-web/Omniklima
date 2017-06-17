@@ -214,3 +214,9 @@ section {
 
 .fullh, .full_size {
   height: 100% !important; }
+
+.error {
+  height: 100vh;
+  width: 100vw; }
+  .error .error_error {
+    text-align: center; }

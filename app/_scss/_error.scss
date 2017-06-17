@@ -1,2 +1,23 @@
 @import "everything";
 
+.error{
+  height: 100vh;
+  width: 100vw;
+  background: $color2;
+  .error_error{
+    text-align: center;
+    h1{
+      font-size: 6vw;
+      font-weight: 600;
+    }
+    p{
+      font-size: 4vw;
+      font-weight: 400;
+      a{
+        &:hover{
+
+        }
+      }
+    }
+  }
+}
