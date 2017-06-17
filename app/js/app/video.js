@@ -1,5 +1,5 @@
 function onYouTubeIframeAPIReady() {
-    //$(document).ready(on_ready_video);
+    $(document).ready(on_ready_video);
 }
 
 var player, iframe;
