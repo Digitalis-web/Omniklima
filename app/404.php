@@ -12,7 +12,7 @@
     <div class="error row-fluid">
         <div class="error_container col-xs-12">
             <h1>Something went wrong</h1>
-            <p>We are sorry we broke something och you cant type<a href="index">Go back home</a></p>
+            <p>We are sorry we broke something or you cant type<a href="index">Go back home</a></p>
         </div>
     </div>
 </section>
