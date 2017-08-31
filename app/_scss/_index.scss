@@ -1,5 +1,50 @@
 @import "everything";
 
+// text size video
+.text_video{
+  h1{
+    margin-top:35vh;
+    font-size:7vw;
+    color: white;
+  }
+
+  h2{
+    font-size:5vw;
+    color: white;
+  }
+
+  button{
+    font-size: 3vw;
+  }
+}
+
+// text size info
+.text_info{
+  text-align: center;
+  h1{
+    font-size:6.5vw;
+    font-weight:600;
+  }
+  p{
+    font-size:3.5vw;
+    font-weight:300;
+  }
+}
+
+// text size contact
+.text_contact{
+  h1{
+    font-size: 9vw;
+  }
+  h2{
+    font-weight: 400;
+    font-size: 4.5vw;
+  }
+  p{
+    font-weight: 300;
+    font-size: 4.5vw;
+  }
+}
 
 //Video header styling
 .video{
@@ -35,17 +80,7 @@
       left: 0;
       text-align: center;
       z-index: 100;
-
-      h1{
-        margin-top:35vh;
-        font-size:7vw;
-        color: white;
-      }
-
-      h2{
-        font-size:5vw;
-        color: white;
-      }
+      @extend .text_video;
 
       button{
         outline: none;
@@ -54,7 +89,6 @@
         background: rgba($color2, 0.4);
         border: 1px solid white;
         color: white;
-        font-size: 3vw;
         padding:0.5vw;
 
         &:hover{
@@ -70,29 +104,33 @@
 //Info section styling
 .info{
   background: darken(white,8%);
+  min-height: 50vh;
 
   .info_container{
+    @extend .nopm;
 
-    .info_img_container{
-      margin-top:10vh;
+    .info_container_top{
+      padding: 10vh 0 10vh 0;
+      .info_text_container_top{
+       @extend .text_info;
+        color: $color2;
+      }
     }
 
-    .info_text_container{
-      margin-bottom:10vh;
-      margin-top: 10vh;
-      text-align: center;
-      color: $color2;
-
-      h1{
-        font-weight: 800;
-        font-size: 8.5vw;
-        margin-bottom:4vh;
+    .info_container_mid{
+      padding: 10vh 0 10vh 0;
+      background: $color2;
+      .info_text_container_mid{
+        @extend .text_info;
+        color: darken(white,8%);
       }
+    }
 
-      p{
-        font-weight: 400;
-        font-size: 5vw;
+    .info_container_bot{
+      padding: 10vh 0 10vh 0;
 
+      .info_text_container_bot{
+        @extend .text_info;
       }
     }
   }
@@ -103,91 +141,107 @@
   .contact_container{
     background: $color2;
     .contact_text_container{
-      margin-bottom:10vh;
-      margin-top: 10vh;
+      margin-bottom:8vh;
+      margin-top: 8vh;
       text-align: center;
       color: white;
+      @extend .text_contact;
+
       h1{
         margin-bottom:5vh;
         font-weight: 800;
-        font-size: 9vw;
         margin-top:10vh;
         text-transform: uppercase;
-      }
-
-      h2{
-        font-weight: 400;
-        font-size: 4.5vw;
-      }
-
-      p{
-        font-weight: 300;
-        font-size: 4.5vw;
       }
     }
   }
 }
 
 //tablet size
-@media (min-width: $screen-sm-min) {}
+@media (min-width: $screen-sm-min) {
+
+  // Video text size
+  .text_video{
+    h1{
+      font-size: 5vw;
+    }
+
+    h2{
+      font-size: 3vw;
+    }
+
+    button{
+      font-size: 2vw;
+    }
+  }
+
+  .text_info{
+    text-align: center;
+    h1{
+      font-size:5.5vw;
+      font-weight:600;
+    }
+    p{
+      font-size:4vw;
+      font-weight:300;
+    }
+  }
+  .text_contact{
+    h1 {
+      font-size: 5vw;
+    }
+    h2 {
+      font-size: 4vw;
+    }
+    p {
+      font-size: 3.5vw;
+    }
+  }
+
+}
 
 //desktop size
 @media (min-width: $screen-md-min) {
-  //Video header styling
-  .video {
-    .video_container {
-      .video_player {
-      }
 
-      .video_text_container {
-        h1 {
-          margin-top: 30vh;
-          font-size: 4vw;
-        }
+  // Video text size
+  .text_video{
+    h1{
+      margin-top: 30vh;
+      font-size: 3.8vw;
+    }
 
-        h2 {
-          font-size: 2vw;
-        }
+    h2{
+      font-size: 2vw;
+    }
 
-        button {
-          font-size: 1vw;
-        }
-      }
+    button{
+      font-size: 1vw;
     }
   }
 
-  //Info section styling
-  .info {
-    .info_container {
-      .info_img_container {
-        margin-left: 2.5vw;
-        margin-bottom: 10vh;
-      }
-      .info_text_container {
-        h1 {
-          font-size: 5vw;
-        }
-        p {
-          font-size: 2vw;
-        }
-      }
+  // Info text size
+  .text_info{
+    text-align: center;
+    h1{
+      font-size:4.2vw;
+      font-weight:600;
+    }
+    p{
+      font-size:2.2vw;
+      font-weight:300;
     }
   }
 
-  //contact section styling
-  .contact {
-    .contact_container {
-      .contact_text_container {
-        h1 {
-          font-size: 5.5vw;
-        }
-        h2 {
-          font-size: 2vw;
-        }
-        p {
-          font-size: 2vw;
-        }
-      }
+  // Contact text size
+  .text_contact{
+    h1 {
+      font-size: 4vw;
+    }
+    h2 {
+      font-size: 2vw;
+    }
+    p {
+      font-size: 2vw;
     }
   }
 }

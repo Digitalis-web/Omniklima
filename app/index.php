@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-<?php include "partials/head.php" ?>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -51,7 +50,7 @@
             <div id="video" class="video_player"></div>
 
             <div class="video_text_container col-xs-12">
-                <h1 class="fade-delay-1 fade-in">RCA road condition ahead </h1>
+                <h1 class="fade-delay-1 fade-in">RCA - Road Condition Ahead </h1>
                 <h2 class="fade-delay-2 fade-in">Technique delivered by OmniKlima</h2>
                 <button class="fade-delay-2 fade-in">play video in fullscreen</button>
             </div>
@@ -63,17 +62,50 @@
 <section class="info container-fluid ">
     <div class="row-fluid info">
         <div class="col-xs-12 info_container">
-            <div class="info_img_container col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1">
-                <img class="slide-in-left slide-in" src="img/logo/Logo.svg" alt="Omniklima logo">
+
+            <div class="col-xs-12 info_container_top">
+
+                <div class="info_img_container_top col-md-3 col-md-offset-0 col-xs-10 col-xs-offset-1">
+                    <img class="slide-in-left slide-in" src="img/logo/Logo.svg" alt="Omniklima logo">
+                </div>
+
+                <div class="info_text_container_top col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
+                    <h1 class="fade-in">Solutions for detection of road condition</h1>
+                    <p class="fade-in">RCA - Road Conditions Ahead of a driving vehicle.</p>
+                    <p class="fade-in">A technique delivered by OmniKlima.</p>
+                </div>
+
             </div>
-            <div class="info_text_container col-xs-10 col-xs-offset-1 col-md-6 col-md-offset-0">
-                <h1 class="fade-in">Solutions for road condition</h1>
-                <p class="fade-in">Driving conditions ahead of a driving vehicle.</p>
-                <p class="fade-in">A technique delivered by OmniKlima.</p>
+
+            <div class="col-xs-12 info_container_mid">
+                <div class="info_text_container_mid col-xs-10 col-xs-offset-1">
+                    <h1 class="fade-in">RCA (Road Condition Ahead) </h1>
+                    <p class="fade-in">sensor fusion technique to determine the
+                        prevailing road condition in front of a moving car.
+                        The product can be used to inform drivers of upcoming
+                        hazardous road conditions or automatically
+                        inform a decision support system in autonomous cars
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-xs-12 info_container_bot">
+                <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 info_img_container_bot">
+                    <img class="slide-in-left slide-in" src="img/Bil.svg" alt="Omniklima">
+                </div>
+
+                <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 info_text_container_bot">
+                    <p>RCA-scale = Road Condition Information (0 - 50 m)
+                        in front of a moving car based on data from a
+                        laser sensor and a world first data processing technique.
+                    </p>
+                </div>
             </div>
         </div>
     </div>
 </section>
+
+
 
 <!-- Contact information -->
 <section class="contact container-fluid">
