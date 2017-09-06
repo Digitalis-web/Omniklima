@@ -111,7 +111,7 @@ section {
   font-size: 4.5vw; }
 
 .video {
-  background: #333333;
+  background: #363636;
   height: 100vh;
   width: 100vw; }
   .video .video_container {
@@ -126,7 +126,7 @@ section {
       height: 100vh;
       z-index: 50; }
     .video .video_container .video_text_container {
-      background: rgba(51, 51, 51, 0.2);
+      background: rgba(54, 54, 54, 0.2);
       position: absolute;
       height: 100vh;
       width: 100vw;
@@ -138,12 +138,12 @@ section {
         outline: none;
         text-transform: uppercase;
         margin-top: 5vh;
-        background: rgba(51, 51, 51, 0.4);
+        background: rgba(54, 54, 54, 0.4);
         border: 1px solid white;
         color: white;
         padding: 0.5vw; }
         .video .video_container .video_text_container button:hover {
-          background: #333333;
+          background: #363636;
           border: 0;
           transition: 0.5s; }
 
@@ -153,17 +153,17 @@ section {
   .info .info_container .info_container_top {
     padding: 10vh 0 10vh 0; }
     .info .info_container .info_container_top .info_text_container_top {
-      color: #333333; }
+      color: #363636; }
   .info .info_container .info_container_mid {
     padding: 10vh 0 10vh 0;
-    background: #333333; }
+    background: #363636; }
     .info .info_container .info_container_mid .info_text_container_mid {
       color: #ebebeb; }
   .info .info_container .info_container_bot {
     padding: 10vh 0 10vh 0; }
 
 .contact .contact_container {
-  background: #333333; }
+  background: #363636; }
   .contact .contact_container .contact_text_container {
     margin-bottom: 8vh;
     margin-top: 8vh;
@@ -256,7 +256,7 @@ section {
 .error {
   height: 100vh;
   width: 100vw;
-  background: #333333; }
+  background: #363636; }
   .error .error_error {
     text-align: center; }
     .error .error_error h1 {
