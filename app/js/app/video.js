@@ -9,14 +9,15 @@ function on_ready_video(){
         videoId: 'ECnlyAGcLPs', // YouTube Video ID
         playerVars: {
             autoplay: 1,        // Auto-play the video on load
-            controls: 0,        // Show pause/play buttons in player
+            controls: 1,        // Show pause/play buttons in player
             showinfo: 0,        // Hide the video title
-            modestbranding: 1,  // Hide the Youtube Logo
+            modestbranding: 0,  // Hide the Youtube Logo
             loop: 1,            // Run the video in a loop
-            fs: 0,              // Hide the full screen button
-            cc_load_policy: 0,  // Hide closed captions
+            fs: 1,              // Hide the full screen button
+            cc_load_policy: 1,  // Hide closed captions
             iv_load_policy: 3,  // Hide the Video Annotations
-            autohide: 1         // Hide video controls when playing
+            autohide: 1,         // Hide video controls when playing
+            rel: 0
         },
         events: {
             onReady: function(e) {
@@ -28,7 +29,6 @@ function on_ready_video(){
                 }
             }
         }
-
     });
 }
 
@@ -39,7 +39,7 @@ function onPlayerReady(event) {
 }
 
 function setupListener (){
-    $('button').on('click', fullscreen);
+    $('.video_text_container').on('click', fullscreen);
 }
 
 function fullscreen() {

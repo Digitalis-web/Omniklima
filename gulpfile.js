@@ -145,9 +145,9 @@ g.task('connect-php', function () {
         'app/css/app.css'
     ]).on('change', reload);
 
-    g.watch('app/_scss/**/*scss',      ['prefix']);
-    g.watch('app/js/app/*.js',         ['concat-js-app']);
-    g.watch('app/js/third_party/*.js', ['concat-js-third-party']);
+    g.watch('app/_scss/**/*scss',       ['prefix']);
+    g.watch('app/js/app/*.js',          ['concat-js-app']);
+    g.watch('app/js/third_party/*.js',  ['concat-js-third-party']);
 });
 
 //clean old dist and compile all files

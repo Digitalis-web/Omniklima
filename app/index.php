@@ -52,7 +52,6 @@
             <div class="video_text_container col-xs-12">
                 <h1 class="fade-delay-1 fade-in">RCA - Road Condition Ahead </h1>
                 <h2 class="fade-delay-2 fade-in">Technique delivered by OmniKlima</h2>
-                <button class="fade-delay-2 fade-in">play video in fullscreen</button>
             </div>
         </div>
     </div>
@@ -104,8 +103,6 @@
         </div>
     </div>
 </section>
-
-
 
 <!-- Contact information -->
 <section class="contact container-fluid">
