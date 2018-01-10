@@ -111,7 +111,7 @@
             <div class="col-md-6 col-md-offset-3 col-xs-10 col-xs-offset-1 contact_text_container fade-in">
                 <h1>contact</h1>
                 <h2>Torbjörn Gustavsson</h2>
-                <p>torbjorn.gustavsson@klimator.se</p>
+                <p>torbjorn.gustavsson@omniklima.com</p>
                 <p>+46 (0)709 170 252</p>
             </div>
         </div>
